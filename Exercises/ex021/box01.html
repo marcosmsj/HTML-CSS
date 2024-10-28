@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Levels</title>
+    <style>
+        h1 { /* Box-level */
+            background-color: lightgray;
+            height: 200px;
+            width: 400px;
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;*/
+
+            /*
+            A ordem sempre é:
+            1º Width
+            2º Style
+            3º Color
+            */
+            border: 10px solid darkgray;
+            
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;*/
+
+            /*Só um valor no padding é o mesmo para os 4 lados. Se colocar dois valores, o primeiro vai ser para cima e baixo e o segundo para direita e esquerda. Se colocar 3 ou mais ele segue a ordem horário, ou seja, cima, direita, baixo e esquerda.*/
+            padding: 10px;
+
+            /*margin-top: 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;*/
+
+            /*Segue o mesmo esquema do padding, mas também é possível acrescentar o auto para que a margem fique automática, no caso abaixo a direita e esquerda serão automatizadas para manter o box no centro*/
+            margin: 20px auto 40px auto;
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: black;*/
+
+            /*
+            A ordem sempre é:
+            1º Width
+            2º Style
+            3º Color
+            */
+
+            outline: 5px dashed black;
+        }
+
+        a { /* Inline-level */
+            border-width: 5px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box-level box examples</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="#">Excepturi nisi fugiat et molestiae</a>, quo molestias quae natus, facilis nobis sapiente dignissimos. Aperiam architecto laboriosam, officiis ex quae iusto possimus voluptatem?</p>
+</body>
+</html>

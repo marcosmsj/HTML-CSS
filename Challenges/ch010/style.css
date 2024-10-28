@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url('./fontes/idroid.otf');
+    format: ('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: auto;
+}
+
+body {
+    background-color: rgb(138, 207, 136);
+    
+}
+
+header {
+    background-image: linear-gradient(180deg, rgb(60, 165, 60), rgb(0, 83, 0));
+    position: fixed top;
+    height: 150px;
+    text-align: center;
+    padding-top: 30px;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.5);    
+}
+
+header > h1 {
+    font: bold 32px Monospace;
+    color: white;
+}
+
+header > p {
+    font: normal 16px Arial;
+    color: white;
+    padding-top: 25px;
+}
+
+header > nav {
+    text-align: left;
+    padding-top: 40px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+}
+
+main {
+    width: 800px;    
+    background-color: white;
+    padding: 15px;
+    text-align: justify;
+    box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+main h1 {
+    font-family: idroid;
+    color: rgb(0, 83, 0);
+}
+
+main h2 {
+    font-family: idroid;
+    background-color: rgb(138, 207, 136);
+    color: rgb(0, 83, 0);
+    padding-left: 5px;
+}
+
+main p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+span#bug {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+section#fim {    
+    background-color: rgb(138, 207, 136);
+    text-align: justify;
+    border-radius: 15px;
+}
+
+section#fim article h2 {
+    background-color: rgb(0, 143, 0);
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    padding-left: 10px;
+    height: 42px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+section#fim > article > p {
+    padding: 10px;
+}
+
+div#list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    background-color: rgb(0, 53, 0);
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 4px;
+}
+
+footer > p {
+    margin: 0px;
+}

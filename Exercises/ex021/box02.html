@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: antiquewhite;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(146, 137, 125);
+            padding: 3px;
+            /*Ordem:
+            1º Delocamento horizontal
+            2º Deslocamento vertical
+            3º Blur
+            4º Spread
+            5º cor
+            */
+            box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.322);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;            
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /*
+            Tem a mesma regra do margin, ou seja, se colocar só um valor aplica para todos os cantos, se colocar dois, o primeiro é para cima esquerda e baixo direita e o segundo para cima direita e baixo esquerda, se colocar três ou mais segue a ordem horária, top right bottom e left.
+            */
+            border-radius: 10px 0px;
+            box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.212);
+        }
+
+        article {
+            background-color: rgb(255, 249, 240);
+        }
+
+        article > aside {
+            background-color: antiquewhite;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        /*
+        div#ball {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="notices">
+            <article>
+                <h2>Global Notices</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis deleniti reprehenderit provident? Laudantium incidunt repellat quasi omnis mollitia natus ex veniam dolorem tenetur, non numquam ea nemo. Nemo, deserunt nulla!</p>
+                <aside>
+                    <p>Article by Marcos Junior</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by Group ManA</p>
+    </footer>
+    <div id="ball"></div>
+</body>
+</html>
