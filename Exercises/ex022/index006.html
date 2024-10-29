@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroud Fixed Image</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url('img/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /*
+            Shorthand - Background
+            Order: color > image > position > [size] > attachment
+
+            background: black url('img/wallpaper002.jpg') center center no-repeat cover fixed;
+
+            The size is not working yet, so you'll need to code the shorthand whitout the size and put then separeted.
+        */
+
+        main {
+            background-color: white;
+            max-width: 700px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Backgroud image test</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laudantium repellendus quibusdam id nesciunt esse incidunt eos exercitationem vel, libero eveniet, pariatur doloribus nam inventore quis aliquid? Aut, mollitia! Sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam similique minus ut, libero consequuntur aliquid? Similique, laborum facilis aliquam beatae cupiditate numquam aperiam, est quaerat, omnis repellendus voluptatibus quos eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. A ea enim veniam, debitis deleniti consequatur aut. Quisquam, cum fuga sed eum placeat sunt odit dolor commodi, eligendi expedita natus rem?</p>
+    </main>
+</body>
+</html>
