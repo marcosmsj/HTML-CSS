@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th.group {
+            width: 100px;
+        }
+
+        th.names {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Favorite Movies</caption>
+        <thead>
+            <tr>
+                <th class="group" scope="col">Group</th>
+                <th class="names" scope="col">Names</th>
+                <th colspan="3" scope="col">Movies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="row">Women</th>
+                <td>Anna Kerbeck</td>
+                <td>Inception</td>
+                <td>The Shawshank Redemption</td>
+                <td>Pulp Fiction</td>
+            </tr>
+            <tr>                
+                <td>Maria Sharapova</td>
+                <td>The Godfather</td>
+                <td>The Dark Knight</td>
+                <td>Interstellar</td>
+            </tr>
+            <tr>                
+                <td>Antonieta Spansk</td>
+                <td>The Matrix</td>
+                <td>Spirited Away</td>
+                <td>Gladiator</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="row">Men</th>
+                <td>Winston Churchill</td>
+                <td>Titanic</td>
+                <td>Jurassic Park</td>
+                <td>La La Land</td>
+            </tr>
+            <tr>                
+                <td>Leonardo Da Vinci</td>
+                <td>Get Out</td>
+                <td>Black Panther</td>
+                <td>The Grand Budapest Hotel</td>
+            </tr>
+            <tr>                
+                <td>Nikola Tesla</td>
+                <td>Knives Out</td>
+                <td>Fight Club</td>
+                <td>The Silence of the Lambs</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
