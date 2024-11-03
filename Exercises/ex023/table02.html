@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        /*
+        tbody tr:nth-child(odd or 2n-1) {
+            background-color: white;
+        }
+        tbody tr:nth-child(even or 2n) {
+            background-color: lightgray;
+        }
+        */
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Big tables</h1>
+    <!--
+        Anatomy for big tables
+        TABLE
+            CAPTION
+            THEAD (optional)
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOTER (optional)
+                TR, TD, TH 
+    -->
+    <table>
+        <caption>
+            Population of the european countries
+        </caption>
+        <thead>
+            <th scope="col">Country</th>
+            <th scope="col" style="width: 50px;">Population</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Russia</td>
+                <td class="num">144,444,359</td>
+            </tr>
+            <tr>
+                <td>Turkey</td>
+                <td class="num">85,816,199</td>
+            </tr>
+            <tr>
+                <td>Germany</td>
+                <td class="num">83,294,633</td>
+            </tr>
+            <tr>
+                <td>United Kingdom</td>
+                <td class="num">67,736,802</td>
+            </tr>
+            <tr>
+                <td>France</td>
+                <td class="num">64,756,584</td>
+            </tr>
+            <tr>
+                <td>Italy</td>
+                <td class="num">58,870,763</td>
+            </tr>
+            <tr>
+                <td>Spain</td>
+                <td class="num">47,519,628</td>
+            </tr>
+            <tr>
+                <td>Poland</td>
+                <td class="num">41,026,068</td>
+            </tr>
+            <tr>
+                <td>Ukraine</td>
+                <td class="num">33,330,432</td>
+            </tr>
+            <tr>
+                <td>Romania</td>
+                <td class="num">19,892,812</td>
+            </tr>
+            <tr>
+                <td>Kazakhstan</td>
+                <td class="num">19,606,634</td>
+            </tr>
+            <tr>
+                <td>Netherlands</td>
+                <td class="num">17,618,299</td>
+            </tr>
+            <tr>
+                <td>Belgium</td>
+                <td class="num">11,686,140</td>
+            </tr>
+            <tr>
+                <td>Sweden</td>
+                <td class="num">10,612,086</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total population</th>
+                <td class="num"><strong>706,211,439</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
