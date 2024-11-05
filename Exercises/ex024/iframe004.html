@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>My site</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse doloribus architecto adipisci consequatur! Recusandae alias dignissimos officiis, voluptatum, fugiat eum beatae nobis animi dolore ex a hic? Ipsa, sit soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illum sint maiores harum fuga quam neque quaerat officiis repellat perferendis repudiandae sapiente culpa atque unde, provident iusto accusantium quis dolor!</p>
+    
+    <!--
+        When you use sandbox in iframe you put and extra security layer. For maximum security the command is:
+            sandbox="sandbox"
+        With this command all content will be blocked in iframe.
+        Another commands:
+            sandbox="allow-same-origin allow-forms allow-scripts"
+        In this case will be allowed only contents in same origin, forms and scripts.
+    -->
+    
+    <iframe src="./extrapages/pg004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        <p>Your PC will explode in 5 minutes.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quisquam illum laborum sint excepturi ea libero sit aliquid consequatur! Totam laboriosam exercitationem illo culpa maiores! Provident consequuntur asperiores quasi eum!</p>
+</body>
+</html>
