@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Test form</h1>
+    <form action="register.php" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">User:</label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="15" placeholder="Username" autocomplete="username">
+        </p>
+        <p>
+            <label for="ipass">Password:</label>
+            <input type="password" name="password" id="ipass" required minlength="8" maxlength="40" placeholder="Password (min 8 carcters)" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="Login">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>
