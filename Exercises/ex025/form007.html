@@ -8,7 +8,39 @@
 <body>
     <h1>Form example</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        
+        <p>
+            <label for="istate">State</label>
+            <select name="state" id="istate">
+                <option value="" selected>--- Choose ---</option>
+                <optgroup label="US">
+                    <option value="NC">North Carolina</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="TX">Texas</option>
+                </optgroup>
+
+                <optgroup label="Belgium">
+                    <option value="EF">East Flanders</option>
+                    <option value="WF">West Flanders</option>
+                    <option value="FM">Flemish</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="ioccup">Occupation:</label>
+            <input type="text" name="occup" id="ioccup" list="occupation">
+            <datalist id="occupation">
+                <option>Doctor</option>
+                <option>House Cleaner</option>
+                <option>Developer</option>
+                <option>Teacher</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Message:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
 
         <p>
             <input type="submit" value="Send">

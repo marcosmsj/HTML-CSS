@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form example</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        
+        <p>
+            <label for="iyear">What year were you born?</label>
+            <input type="number" name="year" id="iyear" min="1900" max="2024" oninput="calcAge">
+        </p>
+
+        <p>
+            <label for="iage">Your age is:</label>
+            <output id="iage">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+
+    <script>
+        function calcAge() {
+            let actual = 
+        }
+
+        /*Parei no 11m do video 27 mod 4*/
+    </script>
+</body>
+</html>
